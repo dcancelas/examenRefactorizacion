@@ -4,21 +4,21 @@ package factorial;
 public class Factorial {
 
     public static void main(String[] args) {
-        int j;
-        int f;
+        int num1;
+        int num2;
 
-        j = 8;
+        num1 = 8;
 
         int i;
-        if (j == 0) f = 1;
+        if (num1 == 0) num2 = 1;
         else {
-            f = 1;
-            for (i = j; i >= 1; i--) {
-                f = f * i;
+            num2 = 1;
+            for (i = num1; i >= 1; i--) {
+                num2 = num2 * i;
             }
         }
 
-        System.out.println(f);
+        System.out.println(num2);
     }
 
 }
