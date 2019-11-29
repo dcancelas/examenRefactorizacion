@@ -2,27 +2,30 @@ package lovivido;
 
 import javax.swing.JOptionPane;
 
-public class LoVivido {
+/*Se ha cambiado el nombre de la clase para que coincidiese con el del archivo,
+por otra parte, los nombres de las variables han sido sustituídos por otros más
+fáciles de identificar*/
+public class lovivido {
 
     public static void main(String[] args) {
-        String n;
-        String e;
-        int m;
-        int d;
-        int h;
+        String nombre;
+        String edad;
+        int meses;
+        int dias;
+        int horas;
         int a;
 
-        n = JOptionPane.showInputDialog ("Escriba su nombre: ");
-        e = JOptionPane.showInputDialog ("Escriba su edad: ");
-        a = Integer.parseInt (e);
+        nombre = JOptionPane.showInputDialog ("Escriba su nombre: ");
+        edad = JOptionPane.showInputDialog ("Escriba su edad: ");
+        a = Integer.parseInt (edad);
 
-        m = (a*12);
-        d = (a*365);
-        h = (d*24);
+        meses = (a*12);
+        dias = (a*365);
+        horas = (dias*24);
 
-        JOptionPane.showMessageDialog(null,  "Meses: "  +m,"Numero de meses vividos de " +n,JOptionPane.INFORMATION_MESSAGE);
-        JOptionPane.showMessageDialog(null, "Días: " +d,"Numero de días vividos de "+n,JOptionPane.INFORMATION_MESSAGE);
-        JOptionPane.showMessageDialog(null, "Horas: " +h,"Numero de horas vividos de "+n,JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null,  "Meses: "  +meses,"Numero de meses vividos de " +nombre,JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Días: " +dias,"Numero de días vividos de "+nombre,JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Horas: " +horas,"Numero de horas vividos de "+nombre,JOptionPane.INFORMATION_MESSAGE);
 
         System.exit (0);
     }
